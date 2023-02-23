@@ -12,31 +12,34 @@
      <main>
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         <div class="ms_containerInfo">
-            <div id="nomeCognome">
+            <div id="nomeCognomecont">
                 
                 <input type="text" id="nomeCognome">
 
             </div>
 
-            <div id="kmDaPercorrere">
+            <div id="kmDaPercorrerecont">
                 
                 <input type="text" id="kmDaPercorrere">
 
             </div>
 
-            <div id="fasciaEta">
+            <div id="fasciaEtacont">
                 
                 <select  id="fasciaEta">
-                    <option value="over65">over65</option>
-                    <option value="Minorenne">Minorenne</option>
-                    <option value="under65">under65</option>
+                    <option id="over65" value="over65">Biglietto over 65</option>
+                    <option id="minorenne" value="Minorenne">Biglietto under 18</option>
+                    <option id="under65" value="under65">Biglietto standard</option>
                 </select>
 
+            </div>
+            <div>
+                <button id="buttonGenera">genera</button>
             </div>
     
         </div>
         <div class="ms_containerBiglietto">
-
+            <h1 id="prezzo"></h1>
         </div>
      </main>
 
