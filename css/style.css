@@ -1,4 +1,70 @@
-.ms_containerInfo{
+body{
+    background-color: rgb(185, 19, 80);
+}
+#formcontainer{
     display: flex;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.ms_chilometri label , .ms_nome label , .ms_selezione label{
+    color: rgb(185, 19, 80);
+}
+
+.title{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.ms_selezione, .ms_chilometri, .ms_nome {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    padding: 20px;
+}
+.ms_containerbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    width: 800px;
+    margin: auto;
+}
+.btn_left{
+    margin-right: 70px;
+    width: 70px;
+    color: rgb(185, 19, 80);
+    font-weight: bolder;
+}
+.btn_right{
+    margin-left: 30px;
+    width: 70px;
+    color: rgb(185, 19, 80);
+    font-weight: bolder;
+}
+
+.containerbiglietto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 800px;
+    height: 200px;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+.ms_interno{
+    width: 700px;
+    border: 2px solid grey;
+    
+    height: 130px;
+
 }

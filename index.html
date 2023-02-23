@@ -10,37 +10,65 @@
 <body>
     
      <main>
-        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <div class="ms_containerInfo">
-            <div id="nomeCognomecont">
-                
-                <input type="text" id="nomeCognome">
-
+       <form>
+        <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div id="formcontainer">
+            <div class="ms_nome">
+                <label for="nomeCognome">Nome Cognome</label>
+                <input type="text" id="nomeCognome"/>
             </div>
-
-            <div id="kmDaPercorrerecont">
-                
-                <input type="text" id="kmDaPercorrere">
-
-            </div>
-
-            <div id="fasciaEtacont">
-                
-                <select  id="fasciaEta">
-                    <option id="over65" value="over65">Biglietto over 65</option>
-                    <option id="minorenne" value="Minorenne">Biglietto under 18</option>
-                    <option id="under65" value="under65">Biglietto standard</option>
+            <div class="ms_selezione">
+                <label for="casellaSelezione">Fascia d'età:</label>
+                <select id="casellaSelezione">
+                    <option value="bigliettoUnder18">minore</option>
+                    <option value="bigliettoOver65">maggiore 65</option>
+                    <option value="bigliettoStandard"> Biglietto standard</option>
                 </select>
+            </div>
 
+            <div class="ms_chilometri">
+                <label for="kmDaPercorrere">Km da percorrere</label>
+                <input type="number" id="kmDaPercorrere"/>
             </div>
-            <div>
-                <button id="buttonGenera">genera</button>
-            </div>
+        </div>
+       </form>
+       <div class="ms_containerbtn">
+            <button class="btn_left" id="inviaForm"> Invia</button>
+            <button class="btn_right" id="resetForm">Reset</button>
+       </div>
+
+       <div>
+           <h1 class="title">IL TUO BIGLIETTO</h1>
+           <div class="containerbiglietto">
+                <div>
+                    <h4>DETTAGLIO PASSEGGERI</h4>
+                </div>
+                <div class="ms_interno">
+                    <div  id="typeTicket" >
+
+                    </div>
     
-        </div>
-        <div class="ms_containerBiglietto">
-            <h1 id="prezzo"></h1>
-        </div>
+                    <div id="risultato">
+    
+                    </div>
+    
+                    <div id="numeroCarrozza">
+    
+                    </div>
+    
+                    <div id="codiceCp">
+    
+                    </div>
+    
+                    <div id="costoBiglietto">
+               
+                    </div>
+
+                </div>
+
+           </div>
+
+       </div>
      </main>
 
 
