@@ -9,6 +9,9 @@
     const totaleconSconto40 = (prezzoBase - calcoloSconto40);// PREZZO TOTALE CON SCONTO DEL 40% PER MAGGIORI DI 65 ANNI
     const numeroCarrozza = Math.floor((Math.random() * 10)) + 1;
     const codiceCp = Math.floor((Math.random() * 90000)) + 10000;
+
+    
+
      
    
     
@@ -32,8 +35,7 @@
             } else{
                 document.getElementById('typeTicket').innerHTML = "Biglietto Standard";
             };
-
-            if (selezioneValore.value == 'bigliettoUnder18')
+            
           }
 
 
